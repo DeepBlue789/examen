@@ -1,0 +1,489 @@
+html{
+  padding:0;
+  max-width:100%;
+  font-family: 'Comfortaa', cursive!important;
+}
+body {
+  font-family: 'Comfortaa', cursive!important;
+  max-width:100%; 
+}
+.row{
+  max-width:100%;
+  margin:0!important;
+}
+.help-inline{
+  color: red;
+}
+/*---------------------------------------------------------------------------------LOGO -------------------------------------------------*/
+.navbar-fixed-top {
+  z-index: 10; 
+  background: white;
+  font-family: 'Comfortaa', cursive;
+  position:fixed;
+	top:0;
+	left:0;    /* {left:0;} + {right:0;} + {margin:0 auto;} center the fixed header in modern browsers */
+	right:0;
+	max-width:2000px;    /* width of #header and #wrapper should be the same */
+}
+/*---------------------------------------------------------------------------------LOGO -------------------------------------------------*/
+/*------------- logo menu ---------------*/
+.logo {
+	text-transform: uppercase;
+	background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  font-size: 30px;
+  padding:0px;
+}
+/*------------- logo index ---------------*/
+.logo1 {
+	text-transform: uppercase;
+	background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  font-size: 60px;
+}
+#row-logo1{
+  text-align:center; 
+  margin-top:45px; 
+  margin-bottom: 45px;
+}
+#wrapper-logo1{
+  margin-bottom: 50px; 
+  margin-top: 50px;
+}
+/*---------------------------------------------------------------------------------PARALLAX IMAGE -------------------------------------------------*/
+.parallax { 
+  /* The image used */
+  background-image: url('books.jpg');
+
+  /* Set a specific height */
+  height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.col-md-3{
+  margin:0!important;
+  max-width:100%!important;
+}
+/*---------------------------------------------------------------------------------TITLE -------------------------------------------------*/
+.title{
+  margin-top:120px;
+  margin-bottom:80px;
+  text-decoration: underline;
+}
+/*------------------------------------------------------------- CAROUSEL INDEX -------------------------------------------------*/
+.carousel{
+  width: 100%;
+  height: 400px;
+  margin-bottom: 50px;
+}
+.carousel-item{
+  width: 1100px;
+  height:400px;
+}
+.carousel-inner{
+  width: 100%;
+  height: 500px;
+}
+.title-event{
+margin: 5px 0px 5px 350px;
+font-size: 20px;
+display: inline;
+}
+.carousel-item img{
+  margin-right:0!important;
+  margin-left: 50px;
+}
+/*------------------------------------------------------------- CARD PRODUCT -------------------------------------------------*/
+.card-product{
+  border: 1px solid grey;
+  padding:0;
+  height:550px;
+  width:300px; 
+  margin-right:0!important; 
+  padding-top: 10px;
+}
+.card-product img{
+  width: 200px; 
+  height:300px;
+}
+.card-text{
+  height: 90px;
+}
+.wrapper-price{
+  height: 25px!important;
+}
+/*------------------------------------------------------------- CARD ARTICLE -------------------------------------------------*/
+.card-article{
+  max-width: 560px; 
+  margin:auto auto;
+}
+/*.card-article img{
+  margin:auto auto!important;
+}*/
+.card-article-liste{
+  border: 1px solid grey;
+  padding:0;
+  height:550px;
+  width:300px; 
+  margin-right:0!important; 
+  padding-top: 10px;
+}
+.card-article-liste img{
+  width: 200px; 
+  height:300px;
+}
+.wrapper-article{
+  height: 100px!important;
+}
+.wrapper_user img{
+  width: 40px; 
+  height: 40px
+}
+.image-article
+{
+  width:100%;
+}
+.image-details-product{
+  height: 400px;
+  width: 300px; 
+  padding:0px; 
+  margin-bottom:50px;
+}
+.image-article-detail{
+ width: 50%;
+}
+/*------------------------------------------------------------- LISTE ARTICLE MEMBRE -------------------------------------------------*/
+.wrapper-avatar{
+height: 50px;
+margin-bottom: 10px!important;
+}
+.wrapper-avatar img{
+  height: 50px!important;
+  border-radius: 100%;
+  width:17%;
+  }
+/*---------------------------------------------------------------------------------CAPTCHA -------------------------------------------------*/
+msg-error {
+  color: #c65848;
+}
+.g-recaptcha.error {
+  border: solid 2px #c64848;
+  padding: .2em;
+  width: 19em;
+}
+#copyright{
+  background-color:black;
+}
+/*------------------------------------------------------------- LISTE ARTICLE MEMBRE -------------------------------------------------*/
+#adress{
+  border:0;
+  margin: auto auto!important;
+}
+/*--------------------------------------------------------------------------------- FOOTER -------------------------------------------------*/
+#footer{
+  margin-top: 200px!important;
+  padding:0;
+}
+#footer1{
+  margin-top: 200px!important;
+  padding:0;
+
+  z-index: 10; 
+  background: white;
+  font-family: 'Comfortaa', cursive;
+  position:fixed;
+	bottom:0;
+	left:0;    /* {left:0;} + {right:0;} + {margin:0 auto;} center the fixed header in modern browsers */
+	right:0;
+	max-width:2000px;    /* width of #header and #wrapper should be the same */
+}
+/*----------------------------------------------------------------- RESPONSIVITE --------------------------------------------------------------------*/
+@media all and (max-width: 1200px){
+  .carousel-item img{
+    width: 80%!important;
+  }
+  .title-event{
+    margin: 5px 280px;
+    font-size: 20px;
+    }
+}
+@media all and (max-width: 992px){
+  .carousel-item img{
+    width: 70%!important;
+  }
+  .title-event{
+    margin: 5px 150px;
+    font-size: 19px;
+    }
+  .card-product{
+width: 230px!important;
+height: 600px;
+  }  
+  .card-article-liste{
+    width: 230px!important;
+    height: 700px!important;
+    margin-right: 10px!important;
+      } 
+  .card-text{
+    height: 150px;
+  }
+  .wrapper-article{
+    height: 180px!important;
+  }
+}
+@media all and (max-width: 769px){
+  .card-article{
+    margin:auto auto;
+  }
+  .image-article
+  {
+    margin-top: 10px 90px! important;
+  }
+}
+@media all and (max-width: 768px){
+  .image-article
+  {
+  width: 60%!important;
+  margin-left: 60px!important
+  }
+}
+@media all and (max-width: 767px){
+  .card-article{
+    max-width: 330px; 
+    margin:auto auto;
+  }
+  .card-product{
+    width: 328px!important; 
+    margin-left: 60px;
+    margin-top:10px;
+  }
+  .image-article
+{
+  width:40%!important;
+  margin-left:90px!important;
+  margin-top: 10px;
+}
+  .image-view{
+    margin-left: 10px!important;
+    margin-top: 20px!important;
+    padding:0!important;
+    margin-left:10px!important;
+  }
+  .font-footer{
+    float:left!important;
+  }
+  .selling-conditions{
+    margin-bottom: 20px;
+  }
+  .carousel-item img{
+    width: 50%!important;
+  }
+  .carousel{
+    height:200px!important;
+  } 
+  .title-event{
+    margin: 5px 90px;
+    font-size: 18px;
+    }
+    .card-article-img img{
+      height: 200px!important;
+      width: 200px!important;
+      margin: 10px 150px!important;
+    }
+}
+@media all and (max-width: 582px){
+  .carousel-item img{
+    width: 450px!important;
+  }
+  .title-event{
+    margin: 5px 60px;
+    font-size: 18px;
+    }
+}
+@media all and (max-width: 690px){
+  .thumbnail img{
+    margin-top: 50px!important;
+  }
+  }
+  @media all and (max-width: 5576px){
+    .card-article-liste{
+    margin: auto auto!important;
+    }
+  }
+@media all and (max-width: 550px){
+  .carousel-item img{
+    width: 450px!important;
+  }
+}
+@media all and (max-width: 540px){
+  #textarea-article{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .card-product{
+    margin: 10px auto!important;
+  }
+}
+@media all and (max-width: 530px){
+  .carousel-item img{
+    width: 400px!important;
+  }
+  .title-event{
+    margin: 5px 0px 5px 50px;
+    font-size: 17px;
+    }
+}
+@media all and (max-width: 470px){
+  .carousel-item img{
+    width: 350px!important;
+  }
+  .title-event{
+    margin: 5px 0px 5px 50px;
+    font-size: 15px;
+    }
+    .carousel{
+      height:100px!important;
+    } 
+}
+@media all and (max-width: 460px){
+  .card-article-img img{
+    margin: 10px 90px!important;
+  }
+  .carousel-item img{
+    margin-left: 40px!important;
+  }
+}
+@media all and (max-width: 420px){
+  .carousel-item img{
+    width: 300px!important;
+  }
+  .title-event{
+    margin: 5px 0px 5px 50px;
+    font-size: 13px;
+    }
+}
+@media all and (max-width: 415px){
+  .image-view{
+    margin-left: 33px!important;
+  }
+}
+@media all and (max-width: 412px){
+  .card-article-img img{
+    margin: 10px 90px!important;
+  }
+  .carousel-item img{
+    margin-left: 40px!important;
+  }
+}
+@media all and (max-width: 389px){
+  .logo1{
+    font-size: 50px;
+  }
+}
+@media all and (max-width: 376px){
+  /*.card-article-liste{
+    margin-left: 55px!important;
+  } */
+  .image-view{
+    margin-left: 15px!important;
+  }
+  .carousel-item{
+    width: 97%!important;
+  }
+  .carousel-item img{
+    margin-left: 10px!important;
+  }
+  .title-event{
+    margin: 0px!important;
+    font-size: 18px;
+  }
+  .card-article-img img{
+    margin: 10px 70px!important;
+  }
+  .card-article-img{
+    height: 200px!important;
+  }
+}
+@media all and (max-width: 370px){
+  .carousel-item img{
+    width: 280px!important;
+    margin-left: 10px;
+  }
+  .title-event{
+    font-size: 13px;
+    margin-left: 10px;
+  }
+}
+@media all and (max-width: 368px){
+  .form{
+    width: 280px!important;
+    margin-left:10px!important;
+  }
+  #product_image{
+    font-size: 14px!important;
+  }
+  .admin{
+    padding:0!important;
+    width:90%!important;
+    margin:0!important;
+  }
+  }
+@media all and (max-width: 365px){
+  #article-submit{
+    font-size: 14px!important;
+  }
+}
+@media all and (max-width: 361px){
+  .card-article-liste{
+    margin-left: 50px!important;
+      } 
+  .image-view{
+    margin-left: 22px!important;
+  }
+  .logo1{
+    font-size: 40px!important;
+  }
+}
+@media all and (max-width: 350px){
+  .thumbnail img{
+    width:90%!important;
+  }
+  .image-view{
+    margin-left: 40px!important;
+  }
+}
+@media all and (max-width: 331px){
+  .title-event{
+    font-size: 12px;
+  }
+  #adress{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
+@media all and (max-width: 331px){
+  .logo1{
+    font-size: 40px;
+  }
+}
+@media all and (max-width: 322px){
+  .card-article-img img{
+    margin: 10px 40px!important;
+  }
+  .image-view{
+    margin-left: 50px!important;
+  }
+  .card-article-liste{
+    margin-left: 28px!important;
+  } 
+}
